@@ -9,18 +9,16 @@ var pikePlace = {
   randCustHour: function() {
     return Math.floor(Math.random() * (this.max - this.min + 1)) + this.min
   },
-  makeUL: function() {
+  makeUL: function(id) {
     var total = 0;
     for( i = 0; i < 8; i++) {
       this.totalCookieHour[i] = Math.floor(this.randCustHour() * this.avgCookieCust);
-
-      var awesomeList = document.getElementById('pike');
 
       var item = document.createElement('li');
 
       item.appendChild(document.createTextNode(this.hours[i] + ': ' + this.totalCookieHour[i] + " cookies"));
 
-      awesomeList.appendChild(item);
+      document.getElementById(id).appendChild(item);
 
       total += this.totalCookieHour[i];
     };
@@ -28,12 +26,12 @@ var pikePlace = {
     var itemTotal = document.createElement('li');
 
     itemTotal.appendChild(document.createTextNode('Total: ' + total + ' cookies'));
-    awesomeList.appendChild(itemTotal);
+    document.getElementById(id).appendChild(itemTotal);
   }
 }
-pikePlace.makeUL();
+pikePlace.makeUL('pike');
 
-//--------------------------------------------
+//-----------------------------------------------
 
 var seaTac = {
   location: 'SeaTac Airport',
@@ -46,18 +44,16 @@ var seaTac = {
   randCustHour: function() {
     return Math.floor(Math.random() * (this.max - this.min + 1)) + this.min
   },
-  makeUL: function() {
+  makeUL: function(id) {
     var total = 0;
     for( i = 0; i < 8; i++) {
       this.totalCookieHour[i] = Math.floor(this.randCustHour() * this.avgCookieCust);
-
-      var awesomeList = document.getElementById('seatac');
 
       var item = document.createElement('li');
 
       item.appendChild(document.createTextNode(this.hours[i] + ': ' + this.totalCookieHour[i] + " cookies"));
 
-      awesomeList.appendChild(item);
+      document.getElementById(id).appendChild(item);
 
       total += this.totalCookieHour[i];
     };
@@ -65,12 +61,12 @@ var seaTac = {
     var itemTotal = document.createElement('li');
 
     itemTotal.appendChild(document.createTextNode('Total: ' + total + ' cookies'));
-    awesomeList.appendChild(itemTotal);
+    document.getElementById(id).appendChild(itemTotal);
   }
 }
-seaTac.makeUL();
+seaTac.makeUL('seatac');
 
-//-----------------------------------------
+//-----------------------------------------------
 
 var southCenter = {
   location: 'Southcenter Mall',
@@ -80,21 +76,19 @@ var southCenter = {
   totalCookieHour: [],
   totalCookieDay: [],
   hours: ['10am', '11am', '12pm','1pm','2pm','3pm','4pm','5pm'],
-  randCustHour: function() {
+  randCustHour: function(id) {
     return Math.floor(Math.random() * (this.max - this.min + 1)) + this.min
   },
-  makeUL: function() {
+  makeUL: function(id) {
     var total = 0;
     for( i = 0; i < 8; i++) {
       this.totalCookieHour[i] = Math.floor(this.randCustHour() * this.avgCookieCust);
-
-      var awesomeList = document.getElementById('south');
 
       var item = document.createElement('li');
 
       item.appendChild(document.createTextNode(this.hours[i] + ': ' + this.totalCookieHour[i] + " cookies"));
 
-      awesomeList.appendChild(item);
+      document.getElementById(id).appendChild(item);
 
       total += this.totalCookieHour[i];
     };
@@ -102,12 +96,12 @@ var southCenter = {
     var itemTotal = document.createElement('li');
 
     itemTotal.appendChild(document.createTextNode('Total: ' + total + ' cookies'));
-    awesomeList.appendChild(itemTotal);
+    document.getElementById(id).appendChild(itemTotal);
   }
 }
-southCenter.makeUL();
+southCenter.makeUL('south');
 
-//------------------------------------------
+//-----------------------------------------------
 
 var bellevue = {
   location: 'Bellevue Square',
@@ -120,18 +114,16 @@ var bellevue = {
   randCustHour: function() {
     return Math.floor(Math.random() * (this.max - this.min + 1)) + this.min
   },
-  makeUL: function() {
+  makeUL: function(id) {
     var total = 0;
     for( i = 0; i < 8; i++) {
       this.totalCookieHour[i] = Math.floor(this.randCustHour() * this.avgCookieCust);
-
-      var awesomeList = document.getElementById('bellevue');
 
       var item = document.createElement('li');
 
       item.appendChild(document.createTextNode(this.hours[i] + ': ' + this.totalCookieHour[i] + " cookies"));
 
-      awesomeList.appendChild(item);
+      document.getElementById(id).appendChild(item);
 
       total += this.totalCookieHour[i];
     };
@@ -139,12 +131,12 @@ var bellevue = {
     var itemTotal = document.createElement('li');
 
     itemTotal.appendChild(document.createTextNode('Total: ' + total + ' cookies'));
-    awesomeList.appendChild(itemTotal);
+    document.getElementById(id).appendChild(itemTotal);
   }
 }
-bellevue.makeUL();
+bellevue.makeUL('bellevue');
 
-//-------------------------------------------
+//-----------------------------------------------
 
 var alki = {
   location: 'Alki',
@@ -157,18 +149,16 @@ var alki = {
   randCustHour: function() {
     return Math.floor(Math.random() * (this.max - this.min + 1)) + this.min
   },
-  makeUL: function() {
+  makeUL: function(id) {
     var total = 0;
     for( i = 0; i < 8; i++) {
       this.totalCookieHour[i] = Math.floor(this.randCustHour() * this.avgCookieCust);
-
-      var awesomeList = document.getElementById('alki');
 
       var item = document.createElement('li');
 
       item.appendChild(document.createTextNode(this.hours[i] + ': ' + this.totalCookieHour[i] + " cookies"));
 
-      awesomeList.appendChild(item);
+      document.getElementById(id).appendChild(item);
 
       total += this.totalCookieHour[i];
     };
@@ -176,7 +166,7 @@ var alki = {
     var itemTotal = document.createElement('li');
 
     itemTotal.appendChild(document.createTextNode('Total: ' + total + ' cookies'));
-    awesomeList.appendChild(itemTotal);
+    getElementById(id).appendChild(itemTotal);
   }
 }
-alki.makeUL();
+alki.makeUL('alki');
