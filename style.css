@@ -1,23 +1,58 @@
 body {
-  background-color: grey;
-}
-p {
-  font-family: arial;
-  text-align: left;
-  color: #000;
+  background-color: #D7D3C8;
 }
 ul {
   font-family: "arial";
   text-align: left;
   color: #000;
 }
-h4 {
+/*h4 {
   color: #000;
   font-family: "times";
   font-size: 30px;
   text-align: left;
-}
+*//*}
 table, th, td {
     border: 5px solid #fa8072;
+}*/
+
+#salmon {
+  text-align: center;
 }
 
+#slogan {
+  font-size: 35px;
+  text-align: center;
+  color: #FF717E;
+}
+
+#store {
+  border: double;
+  background-color: cyan;
+  height: 175px;
+  width: 350px;
+}
+
+#storeTitle {
+  color: #474747;
+  text-align: center;
+  font-size: 20px;
+}
+
+#hist {
+  border: solid;
+  text-align: left;
+}
+#histTitle {
+  text-align: center;
+  font-size: 25px;
+}
+
+#name {
+  font-size: 45px;
+  text-align: center;
+  color: #ffa07a;
+}
+#compHist {
+  text-align: center;
+}
