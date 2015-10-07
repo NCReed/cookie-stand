@@ -1,4 +1,3 @@
-
 var cookieStand = function(place, min, max, avgCookieCust) {
   this.location = location;
   this.min = min;
@@ -31,10 +30,10 @@ var cookieStand = function(place, min, max, avgCookieCust) {
 var pikePlace = new cookieStand('Pike Place Market', 17, 88, 5.2);
 pikePlace.makeUL('pike');
 var seatac = new cookieStand('SeaTac Airport', 6, 44, 1.2);
-seatac.makeUL('seatac')
+seatac.makeUL('seatac');
 var southcenter = new cookieStand('Southcenter Mall', 11, 38, 1.9);
-southcenter.makeUL('southcenter')
+southcenter.makeUL('southcenter');
 var bellevue = new cookieStand('Bellevue square', 20, 48, 3.3);
-bellevue.makeUL('bellevue')
+bellevue.makeUL('bellevue');
 var alki = new cookieStand('Alki', 3, 24, 2.6);
-alki.makeUL('alki')
+alki.makeUL('alki');
