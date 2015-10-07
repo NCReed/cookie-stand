@@ -37,3 +37,4 @@ var bellevue = new cookieStand('Bellevue square', 20, 48, 3.3);
 bellevue.makeUL('bellevue');
 var alki = new cookieStand('Alki', 3, 24, 2.6);
 alki.makeUL('alki');
+
