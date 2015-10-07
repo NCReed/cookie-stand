@@ -1,0 +1,23 @@
+body {
+  background-color: grey;
+}
+p {
+  font-family: arial;
+  text-align: left;
+  color: #000;
+}
+ul {
+  font-family: "arial";
+  text-align: left;
+  color: #000;
+}
+h4 {
+  color: #000;
+  font-family: "times";
+  font-size: 30px;
+  text-align: left;
+}
+table, th, td {
+    border: 5px solid #fa8072;
+}
+
